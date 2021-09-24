@@ -1,0 +1,48 @@
+MODEL:
+  META_ARCHITECTURE: "GeneralizedRCNN"
+  WEIGHT: "../model/resnet101-5d3b4d8f.pth"
+#  CUDADEVICE: 0
+  RPN_ONLY: True
+  DDTNET_ON: True
+  BACKBONE:
+    CONV_BODY: "R-101-FPN-DDTNET"
+  RESNETS:
+    BACKBONE_OUT_CHANNELS: 256
+  RETINANET:
+    USE_C5: False # FCOS uses P5 instead of C5
+  FCOS:
+    # normalizing the regression targets with FPN strides
+    NORM_REG_TARGETS: True
+    # positioning centerness on the regress branch.
+    # Please refer to https://github.com/tianzhi0549/FCOS/issues/89#issuecomment-516877042
+    CENTERNESS_ON_REG: True
+    # using center sampling and GIoU.
+    # Please refer to https://github.com/yqyao/FCOS_PLUS
+    CENTER_SAMPLING_RADIUS: 1.5
+    IOU_LOSS_TYPE: "giou"
+    INFERENCE_TH : 0.5
+  DDTNet:
+    FPN_STRIDES: [4, 8, 16, 32, 64]
+DATASETS:
+  NAME: "Post"
+  TRAIN: ("lym_train1", )
+  TEST: ("lym_test1",)
+INPUT:
+  MIN_SIZE_TRAIN: (320,)
+  MAX_SIZE_TRAIN: 320
+  MIN_SIZE_TEST: 320
+  MAX_SIZE_TEST: 320
+
+SOLVER:
+  BASE_LR: 0.001
+  GAMMA: 0.1
+  WEIGHT_DECAY: 0.01
+  STEPS: (10000, 15000)
+  MAX_ITER: 20000
+
+  IMS_PER_BATCH: 4
+  WARMUP_METHOD: "constant"
+TEST:
+  IMS_PER_BATCH: 1
+
+OUTPUT_DIR: "../outputs/DDTNet/lymdata-LR0.001SGD-WEIGHT_DECAY0.01-GPUbatch4-epoch1000"
