@@ -1,9 +1,10 @@
 # DDTNet: A Dense Dual-Task Network for Tumor-infiltrating Lymphocyte Detection and Segmentation in Histopathological Images of Breast Cancer
 
-This project hosts the code for implementing simultaneous Lymphocyte Detection and Segmentation:
+This project hosts the code for implementing simultaneous Lymphocyte Detection and Segmentation: [Paper](https://www.sciencedirect.com/science/article/pii/S1361841522000676)
 
-    DDTNet: A Dense Dual-Task Network for Tumor-infiltrating Lymphocyte Detection and Segmentation in Histopathological Images of Breast Cancer;
-    Xiaoxuan Zhang, Xiongfeng Zhu, Kai Tang, Yinghua Zhao, Zixiao Lu and Qianjin Feng;
+    Xiaoxuan Zhang, Xiongfeng Zhu, Kai Tang, Yinghua Zhao, Zixiao Lu, Qianjin Feng,
+    DDTNet: A dense dual-task network for tumor-infiltrating lymphocyte detection and segmentation in histopathological images of breast cancer,
+    Medical Image Analysis, Volume 78, 2022,
  
 Implementation based on [FCOS](https://github.com/tianzhi0549/FCOS).
 
