@@ -6,7 +6,7 @@ This project hosts the code for implementing simultaneous Lymphocyte Detection a
     DDTNet: A dense dual-task network for tumor-infiltrating lymphocyte detection and segmentation in histopathological images of breast cancer,
     Medical Image Analysis, Volume 78, 2022,
  
-![|](figs/DDTNet.png)
+![](figs/DDTNet.png)
 Implementation based on [FCOS](https://github.com/tianzhi0549/FCOS).
 
 ## Installation
