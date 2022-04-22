@@ -7,6 +7,7 @@ This project hosts the code for implementing simultaneous Lymphocyte Detection a
     Medical Image Analysis, Volume 78, 2022,
  
 ![Fig](figs/DDTNet.png)
+
 Implementation based on [FCOS](https://github.com/tianzhi0549/FCOS).
 
 ## Installation
