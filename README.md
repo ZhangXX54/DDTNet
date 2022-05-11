@@ -17,7 +17,7 @@ Please check [INSTALL.md](INSTALL.md) for installation instructions.
 You may also want to see the original [README.md](FCOS_README.md) of FCOS and [README.md](MASKRCNN_README.md) of maskrcnn-benchmark.
 
 ## Dataset
-+ Download BCa-lym dataset (H&E images and original manually annotated dots) from [here](https://www.andrewjanowczyk.com/use-case-4-lymphocyte-detection/)
++ Download BCa-lym dataset (H&E images and original manually annotated dots) from [here](www.andrewjanowczyk.com/use-case-4-lymphocyte-detection/)
 
 + Download Post-NAT-BRCA dataset (H&E images and original manually annotated dots) from [here](https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=52758117#bcab02c187174a288dbcbf95d26179e8)
 
